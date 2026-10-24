@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azmira Industries | Exquisite Handcrafted Artifacts & Heritage Decor | Amroha, India</title>
+  <meta name="description" content="Azmira Industries - Premier manufacturer and exporter of traditional Indian handicrafts, hand-carved woodwork, brass art, and bone inlay decor from Hasanpur, Amroha, Uttar Pradesh.">
+  <meta name="keywords" content="Azmira Industries, Amroha handicrafts, Hasanpur woodcraft, Indian brassware, bone inlay, wooden jharokha, traditional handicrafts India, artisan decor">
+  
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%237C2D12' stroke='%23D4AF37' stroke-width='4'/><path d='M50 18 L62 42 L88 42 L67 58 L75 82 L50 66 L25 82 L33 58 L12 42 L38 42 Z' fill='%23D4AF37'/></svg>">
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=3.0">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-bar-left">
+        <span class="badge-heritage"><i class="fa-solid fa-certificate"></i> Direct From Hasanpur, Amroha</span>
+        <span class="top-bar-item d-none-mobile"><i class="fa-solid fa-truck-fast"></i> Worldwide Export & Custom Orders</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:9312534844" class="top-bar-link"><i class="fa-solid fa-phone"></i> +91 9312534844</a>
+        <a href="mailto:Azmiraindustries@gmail.com" class="top-bar-link d-none-tablet"><i class="fa-solid fa-envelope"></i> Azmiraindustries@gmail.com</a>
+        <span class="top-bar-item d-none-mobile"><i class="fa-solid fa-location-dot"></i> Hasanpur, UP</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header" id="header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo">
+        <div class="logo-emblem">
+          <svg viewBox="0 0 60 60" class="emblem-svg">
+            <polygon points="30,4 37,22 56,22 41,34 47,52 30,41 13,52 19,34 4,22 23,22" fill="none" stroke="currentColor" stroke-width="2.5" />
+            <circle cx="30" cy="30" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="30" cy="30" r="4" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">AZMIRA</span>
+          <span class="logo-subtitle">INDUSTRIES</span>
+          <span class="logo-tag">Handicrafts • Amroha</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Our Heritage</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#craftsmanship" class="nav-link">Craftsmanship</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Clients</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline-gold btn-sm d-none-laptop">
+          <i class="fa-regular fa-paper-plane"></i> Request Quote
+        </a>
+        <a href="https://wa.me/919312534844?text=Hello%20Azmira%20Industries,%20I%20am%20interested%20in%20your%20handicraft%20products." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm nav-chat-btn">
+          <i class="fa-brands fa-whatsapp"></i> <span>Chat Now</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="logo-text">
+        <span class="logo-title">AZMIRA</span>
+        <span class="logo-subtitle">INDUSTRIES</span>
+      </div>
+      <button class="close-drawer-btn" id="closeDrawer" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">Our Heritage</a></li>
+      <li><a href="#collections" class="mobile-nav-link">Collections</a></li>
+      <li><a href="#craftsmanship" class="mobile-nav-link">Craftsmanship</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <p><i class="fa-solid fa-phone"></i> +91 9312534844</p>
+      <p><i class="fa-solid fa-envelope"></i> Azmiraindustries@gmail.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Hasanpur, Amroha, UP - 244241</p>
+      <a href="https://wa.me/919312534844" target="_blank" class="btn btn-gold btn-block mt-3">
+        <i class="fa-brands fa-whatsapp"></i> Connect on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-layer"></div>
+      <div class="hero-ornament top-ornament"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="divider-line"></span>
+            <span class="eyebrow-text"><i class="fa-solid fa-gem"></i> Authentic Amroha Artistry</span>
+            <span class="divider-line"></span>
+          </div>
+          <h1 class="hero-title">
+            Timeless Handcrafted Wonders <br>
+            <span class="highlight-text">Rooted In Indian Tradition</span>
+          </h1>
+          <p class="hero-description">
+            Welcome to <strong>Azmira Industries</strong>. Nestled in the historic artisan heartland of Hasanpur, Amroha, 
+            we craft heirloom-grade woodwork, exquisite brassware, intricately carved panels, and bespoke decor for connoisseurs worldwide.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#collections" class="btn btn-gold btn-lg">
+              <span>Explore Masterpieces</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-glass btn-lg">
+              <i class="fa-solid fa-envelope-open-text"></i> Custom / Bulk Inquiries
+            </a>
+          </div>
+
+          <!-- Hero Metrics / Badges -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-num">100%</span>
+              <span class="metric-label">Hand-Carved & Handcrafted</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-num">Amroha</span>
+              <span class="metric-label">Centuries-old Craft Hub</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-num">Global</span>
+              <span class="metric-label">B2B & Export Standards</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-num">Eco</span>
+              <span class="metric-label">Ethically Sourced Woods</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <a href="#about" aria-label="Scroll to about section">
+          <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+          <span class="scroll-label">Scroll to Discover</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Heritage & About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Visual Composition -->
+          <div class="about-visuals">
+            <div class="visual-card visual-main">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Master craftsman hand carving intricate woodwork at Azmira Industries" loading="lazy">
+              <div class="visual-tag">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                  <strong>Artisan Provenance</strong>
+                  <span>Hasanpur, Amroha Heritage</span>
+                </div>
+              </div>
+            </div>
+            <div class="visual-card visual-secondary">
+              <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=600&q=80" alt="Royal antique handicraft home decor piece" loading="lazy">
+            </div>
+            <div class="experience-badge">
+              <span class="badge-number">Azmira</span>
+              <span class="badge-text">Industries</span>
+              <small>Master Craft Guild</small>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="about-content">
+            <div class="section-tag">
+              <i class="fa-solid fa-feather-pointed"></i> The Soul of Amroha Crafts
+            </div>
+            <h2 class="section-title">Where Master Hands Breathe Life Into Natural Wood & Metal</h2>
+            <p class="about-lead">
+              For centuries, the soil of <strong>District Amroha</strong> has echoed with the rhythmic tapping of chisels, the hum of wood lathes, and the warm glow of brass casting furnaces.
+            </p>
+            <p class="about-text">
+              At <strong>Azmira Industries</strong>, located at Sambhal Road, Hasanpur, we carry this timeless legacy forward. We blend indigenous Indian craftsmanship with contemporary sophistication to produce museum-grade artifacts, statement furniture, sacred brassware, and bespoke architectural fixtures.
+            </p>
+
+            <!-- Key Pillars -->
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-tree"></i></div>
+                <div class="pillar-info">
+                  <h4>Seasoned Timber</h4>
+                  <p>Sheesham, Teak, Acacia, and Mango woods thoroughly kiln-dried for lasting durability without warping.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                <div class="pillar-info">
+                  <h4>Generational Ustads</h4>
+                  <p>Hand-carved by master artisans possessing ancestral expertise in Mughal jaali, inlay, and metal repoussé.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-earth-asia"></i></div>
+                <div class="pillar-info">
+                  <h4>Export & OEM Supply</h4>
+                  <p>Serving interior designers, boutique luxury hotels, wholesale exporters, and discerning homeowners worldwide.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="pillar-info">
+                  <h4>Pure Organic Finishes</h4>
+                  <p>Natural beeswax, food-safe oils, and antiqued patinas that celebrate raw organic wood grains.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-footer-action">
+              <a href="#collections" class="btn btn-gold">View Our Creations</a>
+              <div class="signature-block">
+                <div class="signature-title">Crafted with Pride in</div>
+                <div class="signature-loc"><i class="fa-solid fa-map-pin"></i> Hasanpur, District Amroha (UP)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Collections Section -->
+    <section class="section collections-section" id="collections">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-sparkles"></i> Curated Catalog</div>
+          <h2 class="section-title">The Azmira Signature Collection</h2>
+          <p class="section-subtitle">
+            Explore our handcrafted marvels spanning royal woodwork, antiqued brass sculptures, bone inlay treasures, and artisan tableware.
+          </p>
+        </div>
+
+        <!-- Filter & Search Controls -->
+        <div class="collection-controls">
+          <div class="filter-scroll-wrapper">
+            <div class="category-filters" id="categoryFilters">
+              <button class="filter-btn active" data-filter="all">All Masterpieces</button>
+              <button class="filter-btn" data-filter="woodwork">Carved Woodwork</button>
+              <button class="filter-btn" data-filter="brass">Brass & Metal Art</button>
+              <button class="filter-btn" data-filter="inlay">Bone & Inlay Art</button>
+              <button class="filter-btn" data-filter="tableware">Artisanal Tableware</button>
+              <button class="filter-btn" data-filter="heritage">Amroha Specials</button>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="productSearch" placeholder="Search by name, craft, or material..." aria-label="Search handicraft products">
+            <button id="clearSearch" class="clear-btn" title="Clear search" style="display: none;">&times;</button>
+          </div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Dynamically populated or rendered via JS with fallback cards -->
+        </div>
+
+        <!-- Custom Order Banner -->
+        <div class="custom-order-strip">
+          <div class="strip-content">
+            <div class="strip-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <div class="strip-text">
+              <h3>Looking for Bespoke Sizes, Wholesale Lots, or Custom Designs?</h3>
+              <p>Azmira Industries offers end-to-end bespoke fabrication for architects, hospitality projects, and international importers.</p>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-gold btn-lg strip-btn">
+            <i class="fa-solid fa-ruler-combined"></i> Request Custom Quote
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craftsmanship & Process Section -->
+    <section class="section craftsmanship-section" id="craftsmanship">
+      <div class="craftsmanship-bg-pattern"></div>
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag light"><i class="fa-solid fa-hammer"></i> Ancestral Techniques</div>
+          <h2 class="section-title text-white">The Journey of Every Artifact</h2>
+          <p class="section-subtitle text-light">
+            Each creation is a labor of love that takes days of devoted attention from master craftsmen in Hasanpur.
+          </p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-count">01</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h3>Timber Selection</h3>
+            <p>We handpick ethically harvested, mature Sheesham, Acacia, and Mango woods, ensuring natural seasoning and rich grain figures.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-count">02</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3>Freehand Blueprinting</h3>
+            <p>Intricate floral arabesques, jaali lattices, and geometric motifs are drawn directly onto the wood surface without automated stencils.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-count">03</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-chisel"></i>
+            </div>
+            <h3>Artisanal Chiseling</h3>
+            <p>Using centuries-old steel gouges and mallets, our master carvers sculpt multi-dimensional relief work with surgical precision.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-count">04</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>Hand Buff & Patina</h3>
+            <p>Hand-rubbed with natural organic waxes, oils, or antiqued brass washes that protect the artifact while deepening with age.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Showcase / Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-camera-retro"></i> Visual Showcase</div>
+          <h2 class="section-title">The Artisan's Workshop & Gallery</h2>
+          <p class="section-subtitle">
+            Glimpses into our workshops, finished decor installations, and delicate detailing that set Azmira Industries apart.
+          </p>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item item-lg" data-title="Master Woodcarver at Hasanpur Studio" data-desc="Intricate hand-chiseling on a seasoned Sheesham wall panel.">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80" alt="Woodcarving workshop" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+              <h4>Master Woodcarving</h4>
+              <p>Hasanpur Workshop Studio</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Hand-Hammered Antique Brassware" data-desc="Solid brass casting with traditional engravings and oil diwali lamps.">
+            <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80" alt="Handcrafted brass craft" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+              <h4>Antique Brass Craft</h4>
+              <p>Traditional Casting & Engraving</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Artisan Dining & Tableware" data-desc="Pure Acacia wood tableware with natural live edges and food-grade polish.">
+            <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80" alt="Wooden tableware" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+              <h4>Artisan Tableware</h4>
+              <p>Organic Hand-Turned Wood</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Traditional Amroha Percussion Art" data-desc="Hand-tuned classical woodcraft representing Amroha's celebrated musical instrument legacy.">
+            <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80" alt="Amroha musical craft" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+              <h4>Amroha Heritage Craft</h4>
+              <p>Wood & Brass Instrument Craft</p>
+            </div>
+          </div>
+
+          <div class="gallery-item item-wide" data-title="Royal Living Space Transformation" data-desc="Custom-carved jali partition and antique jharokha installed in a luxury villa.">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" alt="Luxury interior featuring Azmira handicrafts" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+              <h4>Interior Decor Harmony</h4>
+              <p>Bespoke Villa Installation</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-title="Intricate Bone Inlay Craft" data-desc="Meticulously set floral inlay mosaic boxes and decorative trays.">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Bone Inlay Art" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+              <h4>Inlay Craftsmanship</h4>
+              <p>Mosaic Art on Sheesham</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us & Quality Guarantee -->
+    <section class="section why-us-section">
+      <div class="container">
+        <div class="why-us-wrapper">
+          <div class="why-us-header text-center">
+            <div class="section-tag"><i class="fa-solid fa-shield-heart"></i> The Azmira Commitment</div>
+            <h2 class="section-title">Why Global Clients & Connoisseurs Trust Us</h2>
+          </div>
+
+          <div class="advantages-grid">
+            <div class="advantage-card">
+              <div class="adv-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+              <h3>Direct Artisan Guild</h3>
+              <p>Eliminating intermediaries means fair wages for our Hasanpur craftsmen and competitive pricing for your orders.</p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="adv-icon"><i class="fa-solid fa-certificate"></i></div>
+              <h3>Strict Quality Control</h3>
+              <p>Every single product undergoes multi-point inspection for moisture content, carving sharpness, and finish integrity.</p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="adv-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+              <h3>Export-Grade Safe Packing</h3>
+              <p>Heavy-duty multi-layer bubble wrapping, reinforced corner guards, and custom wooden crates ensure damage-free transit.</p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="adv-icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+              <h3>Tailored OEM Manufacturing</h3>
+              <p>Have custom CAD files, sketches, or brand packaging requests? We manufacture to your precise blueprints.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Client Appreciation -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-comment-dots"></i> Client Testimonials</div>
+          <h2 class="section-title">Words From Those Who Cherish Our Art</h2>
+          <p class="section-subtitle">
+            From heritage boutique hotels to private art collectors across India and abroad.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote-text">
+              "We ordered 40 hand-carved Sheesham wall panels and brass urlis for our boutique resort in Jaipur from Azmira Industries. The level of detail and timber quality was phenomenal. Truly authentic Amroha craft!"
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">
+                <span>VK</span>
+              </div>
+              <div class="client-details">
+                <strong>Vikramaditya K.</strong>
+                <small>Boutique Resort Owner, Rajasthan</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card featured">
+            <div class="featured-badge">B2B Exporter</div>
+            <div class="quote-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote-text">
+              "Dealing with Azmira Industries has been completely hassle-free. Mr. Azmira and his team understand export standards, moisture regulations, and custom packaging. Their bone inlay chests are our bestsellers."
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">
+                <span>SR</span>
+              </div>
+              <div class="client-details">
+                <strong>Sunaina Rao</strong>
+                <small>Artisan Homeware Importer, UAE & UK</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="quote-text">
+              "I wanted a custom 4-panel Mughal jaali room divider for my penthouse. Azmira Industries created a bespoke piece that is now the centerpiece of my home. Excellent responsiveness on WhatsApp!"
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">
+                <span>AR</span>
+              </div>
+              <div class="client-details">
+                <strong>Ananya Roy</strong>
+                <small>Interior Architect, New Delhi</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-main">
+          <div class="contact-grid">
+            <!-- Left Contact Information -->
+            <div class="contact-info-panel">
+              <div class="section-tag light"><i class="fa-solid fa-handshake"></i> Direct Connect</div>
+              <h2 class="contact-heading">Begin a Conversation With Our Artisans</h2>
+              <p class="contact-desc">
+                Whether you wish to order a single statement centerpiece, inquire about wholesale catalog pricing, or plan a custom architectural commission, we are eager to assist you.
+              </p>
+
+              <div class="contact-details-list">
+                <!-- Address -->
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="detail-text">
+                    <strong>Workshop & Registered Address</strong>
+                    <p>Azmira Industries<br>516 Sambhal Road, Hasanpur,<br>District Amroha, Uttar Pradesh, India – 244241</p>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="detail-text">
+                    <strong>Telephone & Direct Line</strong>
+                    <p><a href="tel:9312534844" class="contact-link">+91 9312534844</a></p>
+                    <small>Monday – Saturday: 9:00 AM – 8:00 PM IST</small>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="detail-text">
+                    <strong>Official Email Address</strong>
+                    <p><a href="mailto:Azmiraindustries@gmail.com" class="contact-link">Azmiraindustries@gmail.com</a></p>
+                    <small>Replies typically within 2-4 business hours</small>
+                  </div>
+                </div>
+
+                <!-- WhatsApp Quick CTA -->
+                <div class="contact-detail-item">
+                  <div class="detail-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                  <div class="detail-text">
+                    <strong>Instant WhatsApp Assistance</strong>
+                    <p>
+                      <a href="https://wa.me/919312534844?text=Hello%20Azmira%20Industries,%20I%20would%20like%20to%20enquire%20about%20your%20handicrafts." target="_blank" rel="noopener noreferrer" class="contact-link whatsapp-link">
+                        +91 9312534844 (Click to Chat)
+                      </a>
+                    </p>
+                    <small>Send sketches, photos, or bulk inquiries</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Action Badges -->
+              <div class="info-badges">
+                <span class="info-badge"><i class="fa-solid fa-check"></i> Export Certified</span>
+                <span class="info-badge"><i class="fa-solid fa-check"></i> Fast Pan-India Dispatch</span>
+                <span class="info-badge"><i class="fa-solid fa-check"></i> Custom OEM Ready</span>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-panel">
+              <div class="form-header">
+                <h3>Send Us an Inquiry</h3>
+                <p>Fill out the form below and we'll get back with specs, catalog, and quotation.</p>
+              </div>
+
+              <form id="inquiryForm" class="inquiry-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fullName">Your Full Name <span class="required">*</span></label>
+                    <div class="input-wrap">
+                      <i class="fa-regular fa-user"></i>
+                      <input type="text" id="fullName" name="fullName" placeholder="e.g. Rahul Sharma / Sarah Jenkins" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="contactPhone">Phone / WhatsApp Number <span class="required">*</span></label>
+                    <div class="input-wrap">
+                      <i class="fa-solid fa-phone-volume"></i>
+                      <input type="tel" id="contactPhone" name="contactPhone" placeholder="e.g. +91 9876543210" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactEmail">Email Address <span class="required">*</span></label>
+                    <div class="input-wrap">
+                      <i class="fa-regular fa-envelope"></i>
+                      <input type="email" id="contactEmail" name="contactEmail" placeholder="e.g. you@example.com" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inquiryType">Type of Requirement</label>
+                    <div class="input-wrap">
+                      <i class="fa-solid fa-layer-group"></i>
+                      <select id="inquiryType" name="inquiryType">
+                        <option value="Catalog & Pricing">General Catalog & Price List</option>
+                        <option value="B2B / Wholesale Order">Wholesale / Bulk Order (B2B)</option>
+                        <option value="Custom Bespoke Piece">Custom Bespoke Design / Architecture</option>
+                        <option value="Export Consignment">Export Consignment</option>
+                        <option value="Specific Product">Specific Product Inquiry</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="interestedProduct">Product Name / Reference (Optional)</label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-tag"></i>
+                    <input type="text" id="interestedProduct" name="interestedProduct" placeholder="e.g. Hand-Carved Heritage Jharokha, Brass Urli...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Detailed Requirement / Message <span class="required">*</span></label>
+                  <div class="input-wrap textarea-wrap">
+                    <i class="fa-regular fa-message"></i>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about the desired dimensions, quantities, destination city, or customization specifications..." required></textarea>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-gold btn-lg btn-block" id="submitFormBtn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Inquiry to Azmira Industries
+                  </button>
+                  <button type="button" class="btn btn-outline-whatsapp btn-lg btn-block mt-2" id="whatsappDirectBtn">
+                    <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp Directly
+                  </button>
+                </div>
+
+                <!-- Form Feedback Notification Area -->
+                <div id="formNotification" class="form-notification" style="display: none;"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Location Showcase Section -->
+    <section class="section map-section">
+      <div class="container">
+        <div class="map-wrapper">
+          <div class="map-info-card">
+            <span class="location-badge"><i class="fa-solid fa-compass"></i> Visit Our Manufacturing Base</span>
+            <h3>Azmira Industries</h3>
+            <p class="map-addr">
+              <strong>516 Sambhal Road, Hasanpur</strong><br>
+              District Amroha, Uttar Pradesh, India – 244241
+            </p>
+            <div class="location-perks">
+              <div class="perk-item">
+                <i class="fa-solid fa-road"></i>
+                <span>Directly on Sambhal Road</span>
+              </div>
+              <div class="perk-item">
+                <i class="fa-solid fa-train"></i>
+                <span>Well connected to Delhi NCR & Moradabad craft corridors</span>
+              </div>
+            </div>
+            <div class="map-btn-group">
+              <a href="https://www.google.com/maps/search/?api=1&query=516+Sambhal+Road+Hasanpur+Amroha+Uttar+Pradesh+244241" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+                <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+              </a>
+              <a href="tel:9312534844" class="btn btn-outline-gold btn-sm">
+                <i class="fa-solid fa-phone"></i> Call for Directions
+              </a>
+            </div>
+          </div>
+          <div class="map-display">
+            <iframe 
+              src="https://maps.google.com/maps?q=Hasanpur+Amroha+Uttar+Pradesh+244241&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Azmira Industries Location Map, Hasanpur, Amroha">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <!-- Brand Summary -->
+        <div class="footer-col brand-col">
+          <div class="logo-text">
+            <span class="logo-title">AZMIRA</span>
+            <span class="logo-subtitle">INDUSTRIES</span>
+          </div>
+          <p class="footer-text">
+            Preserving and advancing India's rich artisanal heritage. We specialize in authentic hand-carved woodwork, pure brass crafts, bone inlay masterpieces, and timeless home accents crafted by master hands in Amroha.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/919312534844" target="_blank" aria-label="WhatsApp" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:Azmiraindustries@gmail.com" aria-label="Email" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+            <a href="tel:9312534844" aria-label="Call" class="social-link"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> Our Heritage & Story</a></li>
+            <li><a href="#collections"><i class="fa-solid fa-chevron-right"></i> Signature Collections</a></li>
+            <li><a href="#craftsmanship"><i class="fa-solid fa-chevron-right"></i> The Artisan Process</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> Workshop Gallery</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Custom Order & Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Craft Categories -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Craft Guild Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="#collections" class="category-link" data-cat="woodwork"><i class="fa-solid fa-chevron-right"></i> Carved Sheesham & Teak</a></li>
+            <li><a href="#collections" class="category-link" data-cat="brass"><i class="fa-solid fa-chevron-right"></i> Antique Brass & Metalware</a></li>
+            <li><a href="#collections" class="category-link" data-cat="inlay"><i class="fa-solid fa-chevron-right"></i> Bone & Shell Inlay Art</a></li>
+            <li><a href="#collections" class="category-link" data-cat="tableware"><i class="fa-solid fa-chevron-right"></i> Artisan Wooden Tableware</a></li>
+            <li><a href="#collections" class="category-link" data-cat="heritage"><i class="fa-solid fa-chevron-right"></i> Amroha Percussion & Folk Art</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Hospitality & Bulk Exports</a></li>
+          </ul>
+        </div>
+
+        <!-- Official Contact Card -->
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Contact Details</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-building"></i>
+              <div>
+                <strong>Azmira Industries</strong>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                516 Sambhal Road, Hasanpur,<br>
+                District Amroha, Uttar Pradesh,<br>
+                India – 244241
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <a href="tel:9312534844">+91 9312534844</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <a href="mailto:Azmiraindustries@gmail.com">Azmiraindustries@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">
+          &copy; <span id="currentYear"></span> <strong>Azmira Industries</strong>. All Rights Reserved. Master Handicrafts of Hasanpur, Amroha, UP.
+        </p>
+        <div class="footer-badges">
+          <span><i class="fa-solid fa-shield-halved"></i> 100% Genuine Handcrafted</span>
+          <span class="mx-2">•</span>
+          <span>Made with Pride in Uttar Pradesh, India</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Quick-View Modal -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle" style="display: none;">
+    <div class="modal-overlay" id="closeModalOverlay"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" id="closeProductModal" aria-label="Close product view">&times;</button>
+      <div class="modal-content" id="modalProductBody">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" style="display: none;">
+    <div class="lightbox-overlay" id="closeLightboxOverlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="closeLightboxBtn">&times;</button>
+      <img src="" alt="" id="lightboxImg">
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle"></h4>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Action Buttons -->
+  <div class="floating-contact-bar">
+    <a href="https://wa.me/919312534844?text=Hello%20Azmira%20Industries,%20I%20am%20interested%20in%20your%20handicraft%20products." target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">WhatsApp Us</span>
+    </a>
+    <a href="tel:9312534844" class="float-btn float-call" title="Call Azmira Industries" aria-label="Call 9312534844">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Call Now</span>
+    </a>
+    <button class="float-btn float-back-top" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
